@@ -3,7 +3,7 @@
 numbers = File.read('input.txt').split("\n").map(&:to_i)
 count = 0
 
-numbers.each.with_index do |num, i|
+numbers.each.with_index do |_num, i|
   break if numbers[i + 3].nil?
 
   first_sum =  numbers[i..(i + 2)].sum
